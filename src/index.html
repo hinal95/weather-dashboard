@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500" >
+    <header class=" sm:h-20 sm:text-5xl sm:ml-5 md:mt-5 md:text-4xl h-16 bg-cyan-500 text-3xl text-white p-3  mt-8">weather dashboard</header>
+    <div class="bg-slate-100 h-96 w-96 mt-8 sm:mt-40 sm:ml-44 sm:h-96 sm:w-96 md:mt-14 md:ml-48 lg:ml72  ">
+        <form action="" class="p-2 gap-1" id="form" >
+            <input type="text" id="search" placeholder="type city name" required class="w-72 h-10 ml-3 mt-4 p-3  rounded-sm border-spacing-1 outline-double outline-2 outline-teal-400">
+            <button id="btn" type="submit" ><i class="fa-solid fa-magnifying-glass bg-cyan-400 h-10 w-10 pt-2.5 pl-1 m-1 rounded-sm text-xl text-white hover:bg-slate-700"></i></button>
+
+        </form>
+        <div class=" outline-1 outline-teal-300 drop-shadow-md m-0">
+            <h1 class="text-4xl text-center text-emerald-400" id="city">Delhi</h1>
+            <span class="text-7xl ml-24 pl-10 drop-shadow-md"><img id="mainIcon" class="fa-solid fa-cloud-sun  h-28 w-32"></img></span>
+            <p class="ml-32 text-3xl mt-2 text-teal-600"  id="mainCondition">condition</p>
+            <p class="text-4xl ml-24 pl-20 mt-2 text-teal-800" id="degree">23 </p>
+            <p class="text-2xl ml-24  mt-2 " id="date">sun jan 07 2025</p>
+        </div>
+        
+        <div class=" flex justify-around mt-8 bg-slate-400 gap-4 p-4">
+              <div class="ml-4 text-lg">
+                <i class="fa-solid fa-cloud" id="icon1"></i>
+              </div> 
+                <div class="mt-7 -ml-16 text-xs">
+                 <p id="temp1">Temperature</p>
+                 <p  id="condition1">condition</p>
+                </div>
+            
+            <div class="ml-10 text-lg">
+                <i class="fa-solid fa-cloud-rain"></i>
+            </div>
+            <div class="mt-7 -ml-16 text-xs">
+                <p id="temp2">Temperature</p>
+                <p id="condition2">condition</p>
+            </div>
+           
+            
+            <div class="ml-10 text-lg">
+                  <i class="fa-solid fa-cloud-sun-rain"></i>
+            </div>
+            <div class="mt-7 -ml-16 text-xs">
+                <p id="temp3">Temperature</p>
+                <p id="condition3">condition</p>
+            </div>
+       </div>
+    
+
+    <script src="/app.js"></script>
+</body>
+</html>
